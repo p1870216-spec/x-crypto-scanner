@@ -1,0 +1,811 @@
+{
+ "status": "success",
+ "code": 0,
+ "msg": "success",
+ "data": {
+  "pin_tweet": null,
+  "tweets": [
+   {
+    "type": "tweet",
+    "id": "2097946784051970179",
+    "url": "https://x.com/Rus_Khairullin/status/2097946784051970179",
+    "twitterUrl": "https://twitter.com/Rus_Khairullin/status/2097946784051970179",
+    "text": "$LAPTOP profile was suspended ✌️ https://t.co/Euv3W6Jq7E",
+    "source": "Twitter for iPhone",
+    "retweetCount": 0,
+    "replyCount": 4,
+    "likeCount": 15,
+    "quoteCount": 0,
+    "viewCount": 1695,
+    "createdAt": "Thu Sep 10 07:14:25 +0000 2026",
+    "lang": "en",
+    "bookmarkCount": 0,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2097946784051970179",
+    "displayTextRange": [
+     0,
+     32
+    ],
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "author": {
+     "type": "user",
+     "userName": "Rus_Khairullin",
+     "url": "https://x.com/Rus_Khairullin",
+     "twitterUrl": "https://twitter.com/Rus_Khairullin",
+     "id": "967316062080348160",
+     "name": "Ruslan Khairullin",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "verifiedType": null,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1999197150799101953/F7uYoWPu_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/967316062080348160/1759855383",
+     "description": "",
+     "location": "Dubai, United Arab Emirates",
+     "followers": 126226,
+     "following": 1487,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Sat Feb 24 08:31:35 +0000 2018",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 18594,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 3725,
+     "statusesCount": 9898,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "2090734811769970964"
+     ],
+     "profile_bio": {
+      "description": "Founder InvestZone - Russia’s top 1 trading hub | No risk = No Porsche | Angel Investor",
+      "entities": {
+       "description": {},
+       "url": {
+        "urls": [
+         {
+          "display_url": "t.me/invest_zonaa",
+          "expanded_url": "https://t.me/invest_zonaa",
+          "indices": [
+           0,
+           23
+          ],
+          "url": "https://t.co/BuFsBnq4xG"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/Euv3W6Jq7E",
+       "expanded_url": "https://x.com/Rus_Khairullin/status/2097946784051970179/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2097946775973687297",
+       "indices": [
+        33,
+        56
+       ],
+       "media_key": "3_2097946775973687297",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0dZ3ozlnABCgACHR1nfBUXQIMAAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHR1nejOWcAEKAAIdHWd8FRdAgwAA",
+         "media_key": "3_2097946775973687297"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HR1nejOWcAEa4hZ.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 561,
+          "w": 1002,
+          "x": 0,
+          "y": 587
+         },
+         {
+          "h": 1002,
+          "w": 1002,
+          "x": 0,
+          "y": 366
+         },
+         {
+          "h": 1142,
+          "w": 1002,
+          "x": 0,
+          "y": 296
+         },
+         {
+          "h": 2004,
+          "w": 1002,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 2048,
+          "w": 1002,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 2048,
+        "width": 1002
+       },
+       "sizes": {
+        "large": {
+         "h": 2048,
+         "w": 1002
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/Euv3W6Jq7E"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {
+     "symbols": [
+      {
+       "indices": [
+        0,
+        7
+       ],
+       "text": "LAPTOP"
+      }
+     ]
+    },
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isLimitedReply": false,
+    "communityInfo": null,
+    "article": null
+   },
+   {
+    "type": "tweet",
+    "id": "2097742332212699606",
+    "url": "https://x.com/Rus_Khairullin/status/2097742332212699606",
+    "twitterUrl": "https://twitter.com/Rus_Khairullin/status/2097742332212699606",
+    "text": "$STRK\n\npretty fast, easy money 🫡 https://t.co/zpCcc6SF92",
+    "source": "Twitter for iPhone",
+    "retweetCount": 0,
+    "replyCount": 0,
+    "likeCount": 7,
+    "quoteCount": 0,
+    "viewCount": 1922,
+    "createdAt": "Wed Sep 09 17:42:00 +0000 2026",
+    "lang": "en",
+    "bookmarkCount": 0,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2097742332212699606",
+    "displayTextRange": [
+     0,
+     32
+    ],
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "author": {
+     "type": "user",
+     "userName": "Rus_Khairullin",
+     "url": "https://x.com/Rus_Khairullin",
+     "twitterUrl": "https://twitter.com/Rus_Khairullin",
+     "id": "967316062080348160",
+     "name": "Ruslan Khairullin",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "verifiedType": null,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1999197150799101953/F7uYoWPu_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/967316062080348160/1759855383",
+     "description": "",
+     "location": "Dubai, United Arab Emirates",
+     "followers": 126226,
+     "following": 1487,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Sat Feb 24 08:31:35 +0000 2018",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 18594,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 3725,
+     "statusesCount": 9898,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "2090734811769970964"
+     ],
+     "profile_bio": {
+      "description": "Founder InvestZone - Russia’s top 1 trading hub | No risk = No Porsche | Angel Investor",
+      "entities": {
+       "description": {},
+       "url": {
+        "urls": [
+         {
+          "display_url": "t.me/invest_zonaa",
+          "expanded_url": "https://t.me/invest_zonaa",
+          "indices": [
+           0,
+           23
+          ],
+          "url": "https://t.co/BuFsBnq4xG"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/zpCcc6SF92",
+       "expanded_url": "https://x.com/Rus_Khairullin/status/2097742332212699606/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2097742324038086657",
+       "indices": [
+        33,
+        56
+       ],
+       "media_key": "3_2097742324038086657",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0crYeGl7ABCgACHRytiW3WYdYAAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHRyth4aXsAEKAAIdHK2JbdZh1gAA",
+         "media_key": "3_2097742324038086657"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HRyth4aXsAETBn0.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 502,
+          "w": 896,
+          "x": 0,
+          "y": 37
+         },
+         {
+          "h": 896,
+          "w": 896,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1021,
+          "w": 896,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1280,
+          "w": 640,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1280,
+          "w": 896,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1280,
+        "width": 896
+       },
+       "sizes": {
+        "large": {
+         "h": 1280,
+         "w": 896
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/zpCcc6SF92"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {
+     "symbols": [
+      {
+       "indices": [
+        0,
+        5
+       ],
+       "text": "STRK"
+      }
+     ]
+    },
+    "quoted_tweet": {
+     "type": "tweet",
+     "id": "2097725816712897022",
+     "url": "https://x.com/Rus_Khairullin/status/2097725816712897022",
+     "twitterUrl": "https://twitter.com/Rus_Khairullin/status/2097725816712897022",
+     "text": "$STRK\n\nI promised I wouldn't long this thing or buy it on spot.\n\nBroke both promises. Sorry, just being honest with you. https://t.co/0YUwQJwZtc",
+     "source": "Twitter for iPhone",
+     "retweetCount": 2,
+     "replyCount": 4,
+     "likeCount": 20,
+     "quoteCount": 1,
+     "viewCount": 4013,
+     "createdAt": "Wed Sep 09 16:36:23 +0000 2026",
+     "lang": "en",
+     "bookmarkCount": 0,
+     "isReply": false,
+     "inReplyToId": null,
+     "conversationId": "2097725816712897022",
+     "displayTextRange": [
+      0,
+      120
+     ],
+     "inReplyToUserId": null,
+     "inReplyToUsername": null,
+     "extendedEntities": {
+      "media": [
+       {
+        "allow_download_status": {
+         "allow_download": true
+        },
+        "display_url": "pic.x.com/0YUwQJwZtc",
+        "expanded_url": "https://x.com/Rus_Khairullin/status/2097725816712897022/photo/1",
+        "ext_master_playlist_only": [],
+        "ext_media_availability": {
+         "status": "Available"
+        },
+        "ext_playlists": [],
+        "features": {
+         "large": {
+          "faces": [
+           {
+            "h": 65,
+            "w": 65,
+            "x": 103,
+            "y": 257
+           }
+          ]
+         },
+         "orig": {
+          "faces": [
+           {
+            "h": 65,
+            "w": 65,
+            "x": 103,
+            "y": 257
+           }
+          ]
+         }
+        },
+        "id_str": "2097725805250183173",
+        "indices": [
+         121,
+         144
+        ],
+        "media_key": "3_2097725805250183173",
+        "media_results": {
+         "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0cnoFyG4AFCgACHRyehB1Wof4AAA==",
+         "result": {
+          "__typename": "ApiMedia",
+          "id": "QXBpTWVkaWE6DAABCgABHRyegXIbgAUKAAIdHJ6EHVah/gAA",
+          "media_key": "3_2097725805250183173"
+         }
+        },
+        "media_url_https": "https://pbs.twimg.com/media/HRyegXIbgAUCu8p.jpg",
+        "original_info": {
+         "focus_rects": [
+          {
+           "h": 506,
+           "w": 904,
+           "x": 0,
+           "y": 99
+          },
+          {
+           "h": 904,
+           "w": 904,
+           "x": 0,
+           "y": 0
+          },
+          {
+           "h": 1031,
+           "w": 904,
+           "x": 0,
+           "y": 0
+          },
+          {
+           "h": 1280,
+           "w": 640,
+           "x": 0,
+           "y": 0
+          },
+          {
+           "h": 1280,
+           "w": 904,
+           "x": 0,
+           "y": 0
+          }
+         ],
+         "height": 1280,
+         "width": 904
+        },
+        "sizes": {
+         "large": {
+          "h": 1280,
+          "w": 904
+         }
+        },
+        "type": "photo",
+        "url": "https://t.co/0YUwQJwZtc"
+       }
+      ]
+     },
+     "card": null,
+     "place": {},
+     "entities": {
+      "symbols": [
+       {
+        "indices": [
+         0,
+         5
+        ],
+        "text": "STRK"
+       }
+      ]
+     },
+     "retweeted_tweet": null,
+     "isLimitedReply": false,
+     "communityInfo": null,
+     "article": null
+    },
+    "retweeted_tweet": null,
+    "isLimitedReply": false,
+    "communityInfo": null,
+    "article": null
+   },
+   {
+    "type": "tweet",
+    "id": "2098018947933094349",
+    "url": "https://x.com/Rus_Khairullin/status/2098018947933094349",
+    "twitterUrl": "https://twitter.com/Rus_Khairullin/status/2098018947933094349",
+    "text": "🚨 Nasdaq invests $100M in Kraken at $21B valuation\n\nI've been trading on @nadoHQ this whole time, which runs on @inkonchain, Kraken's own L2. I tweeted many times about my Nado journey and now you can't have any doubts about this team. \n\nEarn points with me on Nado - https://t.co/chjBfqtAzX\n\nKraken has had a serious year. Respect 🤝",
+    "source": "Twitter for iPhone",
+    "retweetCount": 1,
+    "replyCount": 0,
+    "likeCount": 5,
+    "quoteCount": 0,
+    "viewCount": 658,
+    "createdAt": "Thu Sep 10 12:01:11 +0000 2026",
+    "lang": "en",
+    "bookmarkCount": 0,
+    "isReply": false,
+    "inReplyToId": null,
+    "conversationId": "2098018947933094349",
+    "displayTextRange": [
+     0,
+     267
+    ],
+    "inReplyToUserId": null,
+    "inReplyToUsername": null,
+    "author": {
+     "type": "user",
+     "userName": "Rus_Khairullin",
+     "url": "https://x.com/Rus_Khairullin",
+     "twitterUrl": "https://twitter.com/Rus_Khairullin",
+     "id": "967316062080348160",
+     "name": "Ruslan Khairullin",
+     "isVerified": false,
+     "isBlueVerified": true,
+     "verifiedType": null,
+     "profilePicture": "https://pbs.twimg.com/profile_images/1999197150799101953/F7uYoWPu_normal.jpg",
+     "coverPicture": "https://pbs.twimg.com/profile_banners/967316062080348160/1759855383",
+     "description": "",
+     "location": "Dubai, United Arab Emirates",
+     "followers": 126226,
+     "following": 1487,
+     "status": "",
+     "canDm": true,
+     "canMediaTag": true,
+     "createdAt": "Sat Feb 24 08:31:35 +0000 2018",
+     "entities": {
+      "description": {
+       "urls": []
+      },
+      "url": {}
+     },
+     "fastFollowersCount": 0,
+     "favouritesCount": 18594,
+     "hasCustomTimelines": true,
+     "isTranslator": false,
+     "mediaCount": 3725,
+     "statusesCount": 9898,
+     "withheldInCountries": [],
+     "affiliatesHighlightedLabel": {},
+     "possiblySensitive": false,
+     "pinnedTweetIds": [
+      "2090734811769970964"
+     ],
+     "profile_bio": {
+      "description": "Founder InvestZone - Russia’s top 1 trading hub | No risk = No Porsche | Angel Investor",
+      "entities": {
+       "description": {},
+       "url": {
+        "urls": [
+         {
+          "display_url": "t.me/invest_zonaa",
+          "expanded_url": "https://t.me/invest_zonaa",
+          "indices": [
+           0,
+           23
+          ],
+          "url": "https://t.co/BuFsBnq4xG"
+         }
+        ]
+       }
+      }
+     },
+     "isAutomated": false,
+     "automatedBy": null
+    },
+    "extendedEntities": {
+     "media": [
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/orkTTyA4GC",
+       "expanded_url": "https://x.com/Rus_Khairullin/status/2098018947933094349/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2098014899645648896",
+       "indices": [
+        268,
+        291
+       ],
+       "media_key": "3_2098014899645648896",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0dpW962xAACgACHR2pHguXQc0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHR2lb3rbEAAKAAIdHakeC5dBzQAA",
+         "media_key": "3_2098014899645648896"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HR2lb3rbEAAxQa7.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 675,
+          "w": 1206,
+          "x": 0,
+          "y": 174
+         },
+         {
+          "h": 1095,
+          "w": 1095,
+          "x": 56,
+          "y": 0
+         },
+         {
+          "h": 1095,
+          "w": 961,
+          "x": 123,
+          "y": 0
+         },
+         {
+          "h": 1095,
+          "w": 548,
+          "x": 329,
+          "y": 0
+         },
+         {
+          "h": 1095,
+          "w": 1206,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1095,
+        "width": 1206
+       },
+       "sizes": {
+        "large": {
+         "h": 1095,
+         "w": 1206
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/orkTTyA4GC"
+      },
+      {
+       "allow_download_status": {
+        "allow_download": true
+       },
+       "display_url": "pic.x.com/orkTTyA4GC",
+       "expanded_url": "https://x.com/Rus_Khairullin/status/2098018947933094349/photo/1",
+       "ext_master_playlist_only": [],
+       "ext_media_availability": {
+        "status": "Available"
+       },
+       "ext_playlists": [],
+       "features": {
+        "large": {
+         "faces": []
+        },
+        "orig": {
+         "faces": []
+        }
+       },
+       "id_str": "2098014899666644992",
+       "indices": [
+        268,
+        291
+       ],
+       "media_key": "3_2098014899666644992",
+       "media_results": {
+        "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAAR0dpW98G3AACgACHR2pHguXQc0AAA==",
+        "result": {
+         "__typename": "ApiMedia",
+         "id": "QXBpTWVkaWE6DAABCgABHR2lb3wbcAAKAAIdHakeC5dBzQAA",
+         "media_key": "3_2098014899666644992"
+        }
+       },
+       "media_url_https": "https://pbs.twimg.com/media/HR2lb3wbcAAmypD.jpg",
+       "original_info": {
+        "focus_rects": [
+         {
+          "h": 675,
+          "w": 1206,
+          "x": 0,
+          "y": 175
+         },
+         {
+          "h": 1204,
+          "w": 1204,
+          "x": 0,
+          "y": 0
+         },
+         {
+          "h": 1204,
+          "w": 1056,
+          "x": 44,
+          "y": 0
+         },
+         {
+          "h": 1204,
+          "w": 602,
+          "x": 271,
+          "y": 0
+         },
+         {
+          "h": 1204,
+          "w": 1206,
+          "x": 0,
+          "y": 0
+         }
+        ],
+        "height": 1204,
+        "width": 1206
+       },
+       "sizes": {
+        "large": {
+         "h": 1204,
+         "w": 1206
+        }
+       },
+       "type": "photo",
+       "url": "https://t.co/orkTTyA4GC"
+      }
+     ]
+    },
+    "card": null,
+    "place": {},
+    "entities": {
+     "hashtags": [],
+     "symbols": [],
+     "urls": [
+      {
+       "display_url": "app.nado.xyz/?join=investzo…",
+       "expanded_url": "https://app.nado.xyz/?join=investzona",
+       "indices": [
+        268,
+        291
+       ],
+       "url": "https://t.co/chjBfqtAzX"
+      }
+     ],
+     "user_mentions": [
+      {
+       "id_str": "1947417601333989377",
+       "indices": [
+        73,
+        80
+       ],
+       "name": "Nado",
+       "screen_name": "nadoHQ"
+      },
+      {
+       "id_str": "1770294882185416704",
+       "indices": [
+        112,
+        123
+       ],
+       "name": "ink",
+       "screen_name": "inkonchain"
+      }
+     ]
+    },
+    "quoted_tweet": null,
+    "retweeted_tweet": null,
+    "isLimitedReply": false,
+    "communityInfo": null,
+    "article": null
+   }
+  ]
+ },
+ "has_next_page": true,
+ "next_cursor": "DAADDAABCgABHR3FwI3XsLYKAAIdHGeu81bgSwAIAAIAAAACCAADAAAAAAgABAAAAAAKAAUdHcg7QIAnEAoABh0dyDtAf9jwCwAHAAAA8EVtUEM2d0FBQWZRL2dHSk4wdkdwL0FBQUFCUWRISzJKYmRaaDFoMGRaM3dWRjBDREhSMkxyQmJXd1hnZEhHZXU4MWJnU3gwY1orQWNsdkJ3SFJ5ZWhCMVdvZjRkSEdydHo5ZUE3UjBkcVI0TGwwSE5IUjI4NUhMWFlFRWRITG9oME5mQXpCMGRWc3plVnBIakhSeHF6WmJXMEJBZEhJQUp4NWRBd0IwYzI0UDdGM0U3SFJ4M2NqL1hFRTRkSFhKSjhGWlJvQjBjNlVHRlYyQytIUjNGd0kzWHNMWWRISWM1QUpld0JoMGNnalFEbG1CagAA"
+}

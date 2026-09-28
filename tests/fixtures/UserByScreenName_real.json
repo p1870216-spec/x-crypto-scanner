@@ -1,0 +1,144 @@
+{
+ "data": {
+  "user": {
+   "result": {
+    "__typename": "User",
+    "action_counts": {
+     "favorites_count": 18592
+    },
+    "affiliates_highlighted_label": {},
+    "avatar": {
+     "image_url": "https://pbs.twimg.com/profile_images/1999197150799101953/F7uYoWPu_normal.jpg"
+    },
+    "banner": {
+     "image_url": "https://pbs.twimg.com/profile_banners/967316062080348160/1759855383"
+    },
+    "business_account": {},
+    "core": {
+     "created_at": "Sat Feb 24 08:31:35 +0000 2018",
+     "name": "Ruslan Khairullin",
+     "screen_name": "Rus_Khairullin"
+    },
+    "creator_subscriptions_count": 0,
+    "follow_request_sent": false,
+    "grok_translated_bio_with_availability": {
+     "is_available": false
+    },
+    "has_graduated_access": true,
+    "has_hidden_subscriptions_on_profile": false,
+    "highlights_info": {
+     "can_highlight_tweets": true,
+     "highlighted_tweets": "14"
+    },
+    "id": "VXNlcjo5NjczMTYwNjIwODAzNDgxNjA=",
+    "is_blue_verified": true,
+    "is_profile_translatable": false,
+    "legacy_extended_profile": {},
+    "location": {
+     "location": "Dubai, United Arab Emirates"
+    },
+    "media_permissions": {
+     "can_media_tag": true
+    },
+    "notifications_settings": {
+     "notifications_enabled": false
+    },
+    "parody_commentary_fan_label": "None",
+    "pinned_items": {
+     "tweet_ids_str": [
+      "2090734811769970964"
+     ]
+    },
+    "possibly_sensitive": false,
+    "premium_gifting_eligible": false,
+    "privacy": {
+     "protected": false
+    },
+    "professional": {
+     "category": [
+      {
+       "icon_name": "IconBriefcaseStroke",
+       "id": 1094,
+       "name": "Blockchain"
+      }
+     ],
+     "professional_type": "Creator",
+     "rest_id": "1642225679667458050"
+    },
+    "profile_bio": {
+     "description": "Founder InvestZone - Russia’s top 1 trading hub | No risk = No Porsche | Angel Investor",
+     "entities": {
+      "description": {},
+      "url": {
+       "urls": [
+        {
+         "display_url": "t.me/invest_zonaa",
+         "expanded_url": "https://t.me/invest_zonaa",
+         "indices": [
+          0,
+          23
+         ],
+         "url": "https://t.co/BuFsBnq4xG"
+        }
+       ]
+      }
+     }
+    },
+    "profile_image_shape": "Circle",
+    "profile_metadata": {
+     "profile_interstitial_type": ""
+    },
+    "profile_sort_enabled": true,
+    "profile_translation": {
+     "translator_type": "none"
+    },
+    "relationship_counts": {
+     "followers": 126225,
+     "following": 1487
+    },
+    "relationship_perspectives": {
+     "blocked_by": false,
+     "blocking": false,
+     "followed_by": false,
+     "following": true,
+     "live_following": false,
+     "muting": false
+    },
+    "rest_id": "967316062080348160",
+    "super_follow_eligible": false,
+    "super_followed_by": false,
+    "super_following": false,
+    "tweet_counts": {
+     "media_tweets": 3721,
+     "tweets": 9893
+    },
+    "user_seed_tweet_count": 22,
+    "verification": {
+     "verified": false
+    },
+    "verification_info": {
+     "is_identity_verified": false,
+     "reason": {
+      "description": {
+       "entities": [
+        {
+         "from_index": 26,
+         "ref": {
+          "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+          "url_type": "ExternalUrl"
+         },
+         "to_index": 36
+        }
+       ],
+       "text": "This account is verified. Learn more"
+      },
+      "verified_since_msec": "1778396424907"
+     }
+    },
+    "website": {
+     "url": "https://t.co/BuFsBnq4xG"
+    }
+   }
+  }
+ }
+}

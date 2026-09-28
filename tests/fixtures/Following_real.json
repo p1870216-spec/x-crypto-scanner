@@ -1,0 +1,689 @@
+{
+ "data": {
+  "user": {
+   "result": {
+    "__typename": "User",
+    "timeline": {
+     "timeline": {
+      "instructions": [
+       {
+        "type": "TimelineClearCache"
+       },
+       {
+        "direction": "Top",
+        "type": "TimelineTerminateTimeline"
+       },
+       {
+        "direction": "Bottom",
+        "type": "TimelineTerminateTimeline"
+       },
+       {
+        "entries": [
+         {
+          "content": {
+           "__typename": "TimelineTimelineItem",
+           "clientEventInfo": {
+            "component": "FollowingSgs",
+            "element": "user"
+           },
+           "entryType": "TimelineTimelineItem",
+           "itemContent": {
+            "__typename": "TimelineUser",
+            "itemType": "TimelineUser",
+            "userDisplayType": "User",
+            "user_results": {
+             "result": {
+              "__typename": "User",
+              "action_counts": {
+               "favorites_count": 129
+              },
+              "affiliates_highlighted_label": {
+               "label": {
+                "badge": {
+                 "url": "https://pbs.twimg.com/profile_images/1844399977482813442/1fTlYz2c_bigger.png"
+                },
+                "description": "Robinhood",
+                "url": {
+                 "url": "https://twitter.com/RobinhoodApp",
+                 "urlType": "DeepLink"
+                },
+                "userLabelDisplayType": "Badge",
+                "userLabelType": "BusinessLabel"
+               }
+              },
+              "avatar": {
+               "image_url": "https://pbs.twimg.com/profile_images/1419090083202826241/5O7MOPAz_normal.jpg"
+              },
+              "banner": {
+               "image_url": "https://pbs.twimg.com/profile_banners/1419089826586918913/1677677908"
+              },
+              "core": {
+               "created_at": "Sun Jul 25 00:20:01 +0000 2021",
+               "name": "Johann Kerbrat",
+               "screen_name": "JohannKerbrat"
+              },
+              "follow_request_sent": false,
+              "grok_translated_bio_with_availability": {
+               "is_available": false
+              },
+              "has_graduated_access": true,
+              "id": "VXNlcjoxNDE5MDg5ODI2NTg2OTE4OTEz",
+              "is_blue_verified": true,
+              "location": {
+               "location": "🥐"
+              },
+              "media_permissions": {
+               "can_media_tag": true
+              },
+              "notifications_settings": {
+               "notifications_enabled": false
+              },
+              "parody_commentary_fan_label": "None",
+              "pinned_items": {},
+              "possibly_sensitive": false,
+              "privacy": {
+               "protected": false
+              },
+              "professional": {
+               "category": [],
+               "professional_type": "Creator",
+               "rest_id": "1630934294184046592"
+              },
+              "profile_bio": {
+               "description": "SVP and GM of International & Crypto @ Robinhood. \nTweets are my own opinion.",
+               "entities": {
+                "description": {}
+               }
+              },
+              "profile_description_language": "en",
+              "profile_image_shape": "Circle",
+              "profile_metadata": {
+               "profile_interstitial_type": ""
+              },
+              "profile_translation": {
+               "translator_type": "none"
+              },
+              "relationship_counts": {
+               "followers": 23343,
+               "following": 117
+              },
+              "relationship_perspectives": {
+               "blocked_by": false,
+               "blocking": false,
+               "followed_by": false,
+               "following": false,
+               "live_following": false,
+               "muting": false
+              },
+              "rest_id": "1419089826586918913",
+              "super_follow_eligible": false,
+              "super_followed_by": false,
+              "super_following": false,
+              "tweet_counts": {
+               "media_tweets": 24,
+               "tweets": 361
+              },
+              "verification": {
+               "verified": false
+              },
+              "website": {
+               "url": ""
+              }
+             }
+            }
+           }
+          },
+          "entryId": "user-1419089826586918913",
+          "sortIndex": "2097995626263347200"
+         },
+         {
+          "content": {
+           "__typename": "TimelineTimelineItem",
+           "clientEventInfo": {
+            "component": "FollowingSgs",
+            "element": "user"
+           },
+           "entryType": "TimelineTimelineItem",
+           "itemContent": {
+            "__typename": "TimelineUser",
+            "itemType": "TimelineUser",
+            "userDisplayType": "User",
+            "user_results": {
+             "result": {
+              "__typename": "User",
+              "action_counts": {
+               "favorites_count": 1320
+              },
+              "affiliates_highlighted_label": {
+               "label": {
+                "badge": {
+                 "url": "https://pbs.twimg.com/profile_images/1940131561103347712/f5y2qENu_bigger.jpg"
+                },
+                "description": "Binance",
+                "url": {
+                 "url": "https://twitter.com/binance",
+                 "urlType": "DeepLink"
+                },
+                "userLabelDisplayType": "Badge",
+                "userLabelType": "BusinessLabel"
+               }
+              },
+              "avatar": {
+               "image_url": "https://pbs.twimg.com/profile_images/1875165103793840128/rHoUcrN0_normal.jpg"
+              },
+              "banner": {
+               "image_url": "https://pbs.twimg.com/profile_banners/1454876004279848966/1765182594"
+              },
+              "core": {
+               "created_at": "Sun Oct 31 18:21:57 +0000 2021",
+               "name": "Binance Intern",
+               "screen_name": "Binance_intern"
+              },
+              "follow_request_sent": false,
+              "grok_translated_bio_with_availability": {
+               "is_available": false
+              },
+              "has_graduated_access": true,
+              "id": "VXNlcjoxNDU0ODc2MDA0Mjc5ODQ4OTY2",
+              "is_blue_verified": true,
+              "location": {
+               "location": ""
+              },
+              "media_permissions": {
+               "can_media_tag": false
+              },
+              "notifications_settings": {
+               "notifications_enabled": false
+              },
+              "parody_commentary_fan_label": "None",
+              "pinned_items": {},
+              "possibly_sensitive": false,
+              "privacy": {
+               "protected": false
+              },
+              "profile_bio": {
+               "description": "intern @binance\nEngagements do not imply endorsements",
+               "entities": {
+                "description": {}
+               }
+              },
+              "profile_image_shape": "Square",
+              "profile_metadata": {
+               "profile_interstitial_type": ""
+              },
+              "profile_translation": {
+               "translator_type": "none"
+              },
+              "relationship_counts": {
+               "followers": 106385,
+               "following": 152
+              },
+              "relationship_perspectives": {
+               "blocked_by": false,
+               "blocking": false,
+               "followed_by": false,
+               "following": false,
+               "live_following": false,
+               "muting": false
+              },
+              "rest_id": "1454876004279848966",
+              "super_follow_eligible": false,
+              "super_followed_by": false,
+              "super_following": false,
+              "tweet_counts": {
+               "media_tweets": 1951,
+               "tweets": 6374
+              },
+              "verification": {
+               "verified": false,
+               "verified_type": "Business"
+              },
+              "website": {
+               "url": ""
+              }
+             }
+            }
+           }
+          },
+          "entryId": "user-1454876004279848966",
+          "sortIndex": "2097995626263347199"
+         },
+         {
+          "content": {
+           "__typename": "TimelineTimelineItem",
+           "clientEventInfo": {
+            "component": "FollowingSgs",
+            "element": "user"
+           },
+           "entryType": "TimelineTimelineItem",
+           "itemContent": {
+            "__typename": "TimelineUser",
+            "itemType": "TimelineUser",
+            "userDisplayType": "User",
+            "user_results": {
+             "result": {
+              "__typename": "User",
+              "action_counts": {
+               "favorites_count": 67297
+              },
+              "affiliates_highlighted_label": {
+               "label": {
+                "badge": {
+                 "url": "https://pbs.twimg.com/profile_images/1947111177974054912/otcTsina_bigger.jpg"
+                },
+                "description": "Bitmine (NYSE-BMNR) $ETH $BMNP",
+                "url": {
+                 "url": "https://twitter.com/BitMNR",
+                 "urlType": "DeepLink"
+                },
+                "userLabelDisplayType": "Badge",
+                "userLabelType": "BusinessLabel"
+               }
+              },
+              "avatar": {
+               "image_url": "https://pbs.twimg.com/profile_images/1946026960305410048/h2oEpnJS_normal.jpg"
+              },
+              "banner": {
+               "image_url": "https://pbs.twimg.com/profile_banners/2648357839/1764200546"
+              },
+              "core": {
+               "created_at": "Tue Jul 15 15:56:33 +0000 2014",
+               "name": "Thomas (Tom) Lee (not drummer) FundstratDirect.com",
+               "screen_name": "fundstrat"
+              },
+              "follow_request_sent": false,
+              "grok_translated_bio_with_availability": {
+               "is_available": false
+              },
+              "has_graduated_access": true,
+              "id": "VXNlcjoyNjQ4MzU3ODM5",
+              "is_blue_verified": true,
+              "location": {
+               "location": "New York, NY"
+              },
+              "media_permissions": {
+               "can_media_tag": true
+              },
+              "notifications_settings": {
+               "notifications_enabled": false
+              },
+              "parody_commentary_fan_label": "None",
+              "pinned_items": {
+               "tweet_ids_str": [
+                "2094516891159244944"
+               ]
+              },
+              "possibly_sensitive": false,
+              "privacy": {
+               "protected": false
+              },
+              "profile_bio": {
+               "description": "CIO Fundstrat Capital @FundstratCap $GRNY $GRNJ| Research @fundstratdirect | @CNBC FT contr. | Chairman Bitmine @BitMNR $BMNR $BMNP | Wikipedia: https://t.co/8QsXKpzGT7",
+               "entities": {
+                "description": {
+                 "urls": [
+                  {
+                   "display_url": "bit.ly/3JkWhtw",
+                   "expanded_url": "http://bit.ly/3JkWhtw",
+                   "indices": [
+                    145,
+                    168
+                   ],
+                   "url": "https://t.co/8QsXKpzGT7"
+                  }
+                 ]
+                },
+                "url": {
+                 "urls": [
+                  {
+                   "display_url": "fundstratdirect.com/tlee-services/",
+                   "expanded_url": "https://fundstratdirect.com/tlee-services/",
+                   "indices": [
+                    0,
+                    23
+                   ],
+                   "url": "https://t.co/BTQwbr3Tmz"
+                  }
+                 ]
+                }
+               }
+              },
+              "profile_image_shape": "Circle",
+              "profile_metadata": {
+               "profile_interstitial_type": ""
+              },
+              "profile_translation": {
+               "translator_type": "none"
+              },
+              "relationship_counts": {
+               "followers": 674183,
+               "following": 957
+              },
+              "relationship_perspectives": {
+               "blocked_by": false,
+               "blocking": false,
+               "followed_by": false,
+               "following": false,
+               "live_following": false,
+               "muting": false
+              },
+              "rest_id": "2648357839",
+              "super_follow_eligible": false,
+              "super_followed_by": false,
+              "super_following": false,
+              "tweet_counts": {
+               "media_tweets": 99,
+               "tweets": 1553
+              },
+              "verification": {
+               "verified": false
+              },
+              "website": {
+               "url": "https://t.co/BTQwbr3Tmz"
+              }
+             }
+            }
+           }
+          },
+          "entryId": "user-2648357839",
+          "sortIndex": "2097995626263347198"
+         },
+         {
+          "content": {
+           "__typename": "TimelineTimelineItem",
+           "clientEventInfo": {
+            "component": "FollowingSgs",
+            "element": "user"
+           },
+           "entryType": "TimelineTimelineItem",
+           "itemContent": {
+            "__typename": "TimelineUser",
+            "itemType": "TimelineUser",
+            "userDisplayType": "User",
+            "user_results": {
+             "result": {
+              "__typename": "User",
+              "action_counts": {
+               "favorites_count": 2769
+              },
+              "affiliates_highlighted_label": {
+               "label": {
+                "badge": {
+                 "url": "https://pbs.twimg.com/profile_images/1582168997134422016/HcmVyKwV_bigger.jpg"
+                },
+                "description": "a16z crypto",
+                "url": {
+                 "url": "https://twitter.com/a16zcrypto",
+                 "urlType": "DeepLink"
+                },
+                "userLabelDisplayType": "Badge",
+                "userLabelType": "BusinessLabel"
+               }
+              },
+              "avatar": {
+               "image_url": "https://pbs.twimg.com/profile_images/1843840927812505600/1awbSMDV_normal.jpg"
+              },
+              "banner": {
+               "image_url": "https://pbs.twimg.com/profile_banners/861408824/1644862564"
+              },
+              "core": {
+               "created_at": "Thu Oct 04 13:35:39 +0000 2012",
+               "name": "Guy Wuollet",
+               "screen_name": "guywuolletjr"
+              },
+              "follow_request_sent": false,
+              "grok_translated_bio_with_availability": {
+               "is_available": false
+              },
+              "has_graduated_access": true,
+              "id": "VXNlcjo4NjE0MDg4MjQ=",
+              "is_blue_verified": true,
+              "location": {
+               "location": ""
+              },
+              "media_permissions": {
+               "can_media_tag": false
+              },
+              "notifications_settings": {
+               "notifications_enabled": false
+              },
+              "parody_commentary_fan_label": "None",
+              "pinned_items": {
+               "tweet_ids_str": [
+                "1987973317580521782"
+               ]
+              },
+              "possibly_sensitive": false,
+              "privacy": {
+               "protected": false
+              },
+              "profile_bio": {
+               "description": "GP @a16zcrypto. Common sense will not accomplish great things. Simply become insane and desperate.  See disclosures: https://t.co/pgAyryV7VG",
+               "entities": {
+                "description": {
+                 "urls": [
+                  {
+                   "display_url": "a16z.com/disclosures/",
+                   "expanded_url": "http://a16z.com/disclosures/",
+                   "indices": [
+                    117,
+                    140
+                   ],
+                   "url": "https://t.co/pgAyryV7VG"
+                  }
+                 ]
+                },
+                "url": {
+                 "urls": [
+                  {
+                   "display_url": "guywuollet.com/about",
+                   "expanded_url": "http://guywuollet.com/about",
+                   "indices": [
+                    0,
+                    23
+                   ],
+                   "url": "https://t.co/d4J5SIaehW"
+                  }
+                 ]
+                }
+               }
+              },
+              "profile_description_language": "en",
+              "profile_image_shape": "Circle",
+              "profile_metadata": {
+               "profile_interstitial_type": ""
+              },
+              "profile_translation": {
+               "translator_type": "none"
+              },
+              "relationship_counts": {
+               "followers": 18148,
+               "following": 4675
+              },
+              "relationship_perspectives": {
+               "blocked_by": false,
+               "blocking": false,
+               "followed_by": false,
+               "following": false,
+               "live_following": false,
+               "muting": false
+              },
+              "rest_id": "861408824",
+              "super_follow_eligible": false,
+              "super_followed_by": false,
+              "super_following": false,
+              "tweet_counts": {
+               "media_tweets": 124,
+               "tweets": 1678
+              },
+              "verification": {
+               "verified": false
+              },
+              "website": {
+               "url": "https://t.co/d4J5SIaehW"
+              }
+             }
+            }
+           }
+          },
+          "entryId": "user-861408824",
+          "sortIndex": "2097995626263347197"
+         },
+         {
+          "content": {
+           "__typename": "TimelineTimelineItem",
+           "clientEventInfo": {
+            "component": "FollowingSgs",
+            "element": "user"
+           },
+           "entryType": "TimelineTimelineItem",
+           "itemContent": {
+            "__typename": "TimelineUser",
+            "itemType": "TimelineUser",
+            "userDisplayType": "User",
+            "user_results": {
+             "result": {
+              "__typename": "User",
+              "action_counts": {
+               "favorites_count": 3582
+              },
+              "affiliates_highlighted_label": {
+               "label": {
+                "badge": {
+                 "url": "https://pbs.twimg.com/profile_images/1978267585633525760/PavGc5KA_bigger.png"
+                },
+                "description": "Infinex",
+                "url": {
+                 "url": "https://twitter.com/infinex",
+                 "urlType": "DeepLink"
+                },
+                "userLabelDisplayType": "Badge",
+                "userLabelType": "BusinessLabel"
+               }
+              },
+              "avatar": {
+               "image_url": "https://pbs.twimg.com/profile_images/2078565051456520192/EJbcGljp_normal.jpg"
+              },
+              "banner": {
+               "image_url": "https://pbs.twimg.com/profile_banners/24809221/1737512387"
+              },
+              "core": {
+               "created_at": "Tue Mar 17 00:55:08 +0000 2009",
+               "name": "kain",
+               "screen_name": "kain"
+              },
+              "follow_request_sent": false,
+              "grok_translated_bio_with_availability": {
+               "is_available": false
+              },
+              "has_graduated_access": true,
+              "id": "VXNlcjoyNDgwOTIyMQ==",
+              "is_blue_verified": true,
+              "location": {
+               "location": "Onchain"
+              },
+              "media_permissions": {
+               "can_media_tag": false
+              },
+              "notifications_settings": {
+               "notifications_enabled": false
+              },
+              "parody_commentary_fan_label": "None",
+              "pinned_items": {
+               "tweet_ids_str": [
+                "1114724711424880640"
+               ]
+              },
+              "possibly_sensitive": false,
+              "privacy": {
+               "protected": false
+              },
+              "profile_bio": {
+               "description": "Founder @infinex , @synthetix. Partner @bodhi_ventures",
+               "entities": {
+                "description": {},
+                "url": {
+                 "urls": [
+                  {
+                   "display_url": "infinex.xyz",
+                   "expanded_url": "https://infinex.xyz",
+                   "indices": [
+                    0,
+                    23
+                   ],
+                   "url": "https://t.co/SbYzMKApzD"
+                  }
+                 ]
+                }
+               }
+              },
+              "profile_image_shape": "Circle",
+              "profile_metadata": {
+               "profile_interstitial_type": ""
+              },
+              "profile_translation": {
+               "translator_type": "none"
+              },
+              "relationship_counts": {
+               "followers": 144024,
+               "following": 1395
+              },
+              "relationship_perspectives": {
+               "blocked_by": false,
+               "blocking": false,
+               "followed_by": false,
+               "following": false,
+               "live_following": false,
+               "muting": false
+              },
+              "rest_id": "24809221",
+              "super_follow_eligible": false,
+              "super_followed_by": false,
+              "super_following": false,
+              "tweet_counts": {
+               "media_tweets": 601,
+               "tweets": 13468
+              },
+              "verification": {
+               "verified": false
+              },
+              "website": {
+               "url": "https://t.co/SbYzMKApzD"
+              }
+             }
+            }
+           }
+          },
+          "entryId": "user-24809221",
+          "sortIndex": "2097995626263347196"
+         },
+         {
+          "content": {
+           "__typename": "TimelineTimelineCursor",
+           "cursorType": "Bottom",
+           "entryType": "TimelineTimelineCursor",
+           "value": "1872220647046891594|2097995626263347148"
+          },
+          "entryId": "cursor-bottom-2097995626263347150",
+          "sortIndex": "2097995626263347150"
+         },
+         {
+          "content": {
+           "__typename": "TimelineTimelineCursor",
+           "cursorType": "Top",
+           "entryType": "TimelineTimelineCursor",
+           "value": "-1|2097995626263347201"
+          },
+          "entryId": "cursor-top-2097995626263347201",
+          "sortIndex": "2097995626263347201"
+         }
+        ],
+        "type": "TimelineAddEntries"
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,406 @@
+{
+ "status": "success",
+ "msg": "success",
+ "users": [
+  {
+   "id": "1419089826586918913",
+   "name": "Johann Kerbrat",
+   "userName": "JohannKerbrat",
+   "location": "🥐",
+   "url": "",
+   "description": "SVP and GM of International & Crypto @ Robinhood. \nTweets are my own opinion.",
+   "entities": {
+    "description": {}
+   },
+   "protected": false,
+   "isVerified": false,
+   "isBlueVerified": true,
+   "verifiedType": null,
+   "followers": 23361,
+   "following": 117,
+   "favouritesCount": 129,
+   "statusesCount": 361,
+   "mediaCount": 24,
+   "createdAt": "2021-07-25T00:20:01.000000Z",
+   "coverPicture": "https://pbs.twimg.com/profile_banners/1419089826586918913/1677677908",
+   "profilePicture": "https://pbs.twimg.com/profile_images/1419090083202826241/5O7MOPAz_normal.jpg",
+   "canDm": true,
+   "affiliatesHighlightedLabel": {
+    "label": {
+     "badge": {
+      "url": "https://pbs.twimg.com/profile_images/1844399977482813442/1fTlYz2c_bigger.png"
+     },
+     "description": "Robinhood",
+     "url": {
+      "url": "https://twitter.com/RobinhoodApp",
+      "url_type": "DeepLink"
+     },
+     "user_label_display_type": "Badge",
+     "user_label_type": "BusinessLabel"
+    }
+   },
+   "isAutomated": false,
+   "automatedBy": null,
+   "pinnedTweetIds": [],
+   "profile_interstitial_type": ""
+  },
+  {
+   "id": "1454876004279848966",
+   "name": "Binance Intern",
+   "userName": "Binance_intern",
+   "location": "",
+   "url": "",
+   "description": "intern @binance\nEngagements do not imply endorsements",
+   "entities": {
+    "description": {
+     "user_mentions": [
+      {
+       "id_str": "",
+       "indices": [
+        7,
+        15
+       ],
+       "name": "",
+       "screen_name": "binance"
+      }
+     ]
+    }
+   },
+   "protected": false,
+   "isVerified": false,
+   "isBlueVerified": true,
+   "verifiedType": "Business",
+   "followers": 106408,
+   "following": 152,
+   "favouritesCount": 1320,
+   "statusesCount": 6375,
+   "mediaCount": 1951,
+   "createdAt": "2021-10-31T18:21:57.000000Z",
+   "coverPicture": "https://pbs.twimg.com/profile_banners/1454876004279848966/1765182594",
+   "profilePicture": "https://pbs.twimg.com/profile_images/1875165103793840128/rHoUcrN0_normal.jpg",
+   "canDm": true,
+   "affiliatesHighlightedLabel": {
+    "label": {
+     "badge": {
+      "url": "https://pbs.twimg.com/profile_images/1940131561103347712/f5y2qENu_bigger.jpg"
+     },
+     "description": "Binance",
+     "url": {
+      "url": "https://twitter.com/binance",
+      "url_type": "DeepLink"
+     },
+     "user_label_display_type": "Badge",
+     "user_label_type": "BusinessLabel"
+    }
+   },
+   "isAutomated": false,
+   "automatedBy": null,
+   "pinnedTweetIds": [],
+   "profile_interstitial_type": ""
+  },
+  {
+   "id": "2648357839",
+   "name": "Thomas (Tom) Lee (not drummer) FundstratDirect.com",
+   "userName": "fundstrat",
+   "location": "New York, NY",
+   "url": "https://t.co/BTQwbr3Tmz",
+   "description": "CIO Fundstrat Capital @FundstratCap $GRNY $GRNJ| Research @fundstratdirect | @CNBC FT contr. | Chairman Bitmine @BitMNR $BMNR $BMNP | Wikipedia: https://t.co/8QsXKpzGT7",
+   "entities": {
+    "description": {
+     "symbols": [
+      {
+       "indices": [
+        36,
+        41
+       ],
+       "text": "GRNY"
+      },
+      {
+       "indices": [
+        42,
+        47
+       ],
+       "text": "GRNJ"
+      },
+      {
+       "indices": [
+        120,
+        125
+       ],
+       "text": "BMNR"
+      },
+      {
+       "indices": [
+        126,
+        131
+       ],
+       "text": "BMNP"
+      }
+     ],
+     "urls": [
+      {
+       "display_url": "bit.ly/3JkWhtw",
+       "expanded_url": "http://bit.ly/3JkWhtw",
+       "indices": [
+        145,
+        168
+       ],
+       "url": "https://t.co/8QsXKpzGT7"
+      }
+     ],
+     "user_mentions": [
+      {
+       "id_str": "",
+       "indices": [
+        22,
+        35
+       ],
+       "name": "",
+       "screen_name": "FundstratCap"
+      },
+      {
+       "id_str": "",
+       "indices": [
+        58,
+        74
+       ],
+       "name": "",
+       "screen_name": "fundstratdirect"
+      },
+      {
+       "id_str": "",
+       "indices": [
+        77,
+        82
+       ],
+       "name": "",
+       "screen_name": "CNBC"
+      },
+      {
+       "id_str": "",
+       "indices": [
+        112,
+        119
+       ],
+       "name": "",
+       "screen_name": "BitMNR"
+      }
+     ]
+    },
+    "url": {
+     "urls": [
+      {
+       "display_url": "fundstratdirect.com/tlee-services/",
+       "expanded_url": "https://fundstratdirect.com/tlee-services/",
+       "indices": [
+        0,
+        23
+       ],
+       "url": "https://t.co/BTQwbr3Tmz"
+      }
+     ]
+    }
+   },
+   "protected": false,
+   "isVerified": false,
+   "isBlueVerified": true,
+   "verifiedType": null,
+   "followers": 674194,
+   "following": 957,
+   "favouritesCount": 67300,
+   "statusesCount": 1556,
+   "mediaCount": 99,
+   "createdAt": "2014-07-15T15:56:33.000000Z",
+   "coverPicture": "https://pbs.twimg.com/profile_banners/2648357839/1764200546",
+   "profilePicture": "https://pbs.twimg.com/profile_images/1946026960305410048/h2oEpnJS_normal.jpg",
+   "canDm": true,
+   "affiliatesHighlightedLabel": {
+    "label": {
+     "badge": {
+      "url": "https://pbs.twimg.com/profile_images/1947111177974054912/otcTsina_bigger.jpg"
+     },
+     "description": "Bitmine (NYSE-BMNR) $ETH $BMNP",
+     "url": {
+      "url": "https://twitter.com/BitMNR",
+      "url_type": "DeepLink"
+     },
+     "user_label_display_type": "Badge",
+     "user_label_type": "BusinessLabel"
+    }
+   },
+   "isAutomated": false,
+   "automatedBy": null,
+   "pinnedTweetIds": [
+    "2094516891159244944"
+   ],
+   "profile_interstitial_type": ""
+  },
+  {
+   "id": "861408824",
+   "name": "Guy Wuollet",
+   "userName": "guywuolletjr",
+   "location": "",
+   "url": "https://t.co/d4J5SIaehW",
+   "description": "GP @a16zcrypto. Common sense will not accomplish great things. Simply become insane and desperate.  See disclosures: https://t.co/pgAyryV7VG",
+   "entities": {
+    "description": {
+     "urls": [
+      {
+       "display_url": "a16z.com/disclosures/",
+       "expanded_url": "http://a16z.com/disclosures/",
+       "indices": [
+        117,
+        140
+       ],
+       "url": "https://t.co/pgAyryV7VG"
+      }
+     ],
+     "user_mentions": [
+      {
+       "id_str": "",
+       "indices": [
+        3,
+        14
+       ],
+       "name": "",
+       "screen_name": "a16zcrypto"
+      }
+     ]
+    },
+    "url": {
+     "urls": [
+      {
+       "display_url": "guywuollet.com/about",
+       "expanded_url": "http://guywuollet.com/about",
+       "indices": [
+        0,
+        23
+       ],
+       "url": "https://t.co/d4J5SIaehW"
+      }
+     ]
+    }
+   },
+   "protected": false,
+   "isVerified": false,
+   "isBlueVerified": true,
+   "verifiedType": null,
+   "followers": 18149,
+   "following": 4675,
+   "favouritesCount": 2770,
+   "statusesCount": 1678,
+   "mediaCount": 124,
+   "createdAt": "2012-10-04T13:35:39.000000Z",
+   "coverPicture": "https://pbs.twimg.com/profile_banners/861408824/1644862564",
+   "profilePicture": "https://pbs.twimg.com/profile_images/1843840927812505600/1awbSMDV_normal.jpg",
+   "canDm": true,
+   "affiliatesHighlightedLabel": {
+    "label": {
+     "badge": {
+      "url": "https://pbs.twimg.com/profile_images/1582168997134422016/HcmVyKwV_bigger.jpg"
+     },
+     "description": "a16z crypto",
+     "url": {
+      "url": "https://twitter.com/a16zcrypto",
+      "url_type": "DeepLink"
+     },
+     "user_label_display_type": "Badge",
+     "user_label_type": "BusinessLabel"
+    }
+   },
+   "isAutomated": false,
+   "automatedBy": null,
+   "pinnedTweetIds": [
+    "1987973317580521782"
+   ],
+   "profile_interstitial_type": ""
+  },
+  {
+   "id": "24809221",
+   "name": "kain",
+   "userName": "kain",
+   "location": "Onchain",
+   "url": "https://t.co/SbYzMKApzD",
+   "description": "Founder @infinex , @synthetix. Partner @bodhi_ventures",
+   "entities": {
+    "description": {
+     "user_mentions": [
+      {
+       "id_str": "",
+       "indices": [
+        8,
+        16
+       ],
+       "name": "",
+       "screen_name": "infinex"
+      },
+      {
+       "id_str": "",
+       "indices": [
+        19,
+        29
+       ],
+       "name": "",
+       "screen_name": "synthetix"
+      },
+      {
+       "id_str": "",
+       "indices": [
+        39,
+        54
+       ],
+       "name": "",
+       "screen_name": "bodhi_ventures"
+      }
+     ]
+    },
+    "url": {
+     "urls": [
+      {
+       "display_url": "infinex.xyz",
+       "expanded_url": "https://infinex.xyz",
+       "indices": [
+        0,
+        23
+       ],
+       "url": "https://t.co/SbYzMKApzD"
+      }
+     ]
+    }
+   },
+   "protected": false,
+   "isVerified": false,
+   "isBlueVerified": true,
+   "verifiedType": null,
+   "followers": 144023,
+   "following": 1395,
+   "favouritesCount": 3582,
+   "statusesCount": 13469,
+   "mediaCount": 601,
+   "createdAt": "2009-03-17T00:55:08.000000Z",
+   "coverPicture": "https://pbs.twimg.com/profile_banners/24809221/1737512387",
+   "profilePicture": "https://pbs.twimg.com/profile_images/2078565051456520192/EJbcGljp_normal.jpg",
+   "canDm": true,
+   "affiliatesHighlightedLabel": {
+    "label": {
+     "badge": {
+      "url": "https://pbs.twimg.com/profile_images/1978267585633525760/PavGc5KA_bigger.png"
+     },
+     "description": "Infinex",
+     "url": {
+      "url": "https://twitter.com/infinex",
+      "url_type": "DeepLink"
+     },
+     "user_label_display_type": "Badge",
+     "user_label_type": "BusinessLabel"
+    }
+   },
+   "isAutomated": false,
+   "automatedBy": null,
+   "pinnedTweetIds": [
+    "1114724711424880640"
+   ],
+   "profile_interstitial_type": ""
+  }
+ ]
+}

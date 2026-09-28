@@ -1,0 +1,48 @@
+{
+ "status": "success",
+ "msg": "success",
+ "data": {
+  "id": "967316062080348160",
+  "name": "Ruslan Khairullin",
+  "userName": "Rus_Khairullin",
+  "location": "Dubai, United Arab Emirates",
+  "url": "https://t.co/BuFsBnq4xG",
+  "description": "Founder InvestZone - Russia’s top 1 trading hub | No risk = No Porsche | Angel Investor",
+  "entities": {
+   "description": {},
+   "url": {
+    "urls": [
+     {
+      "display_url": "t.me/invest_zonaa",
+      "expanded_url": "https://t.me/invest_zonaa",
+      "indices": [
+       0,
+       23
+      ],
+      "url": "https://t.co/BuFsBnq4xG"
+     }
+    ]
+   }
+  },
+  "protected": false,
+  "isVerified": false,
+  "isBlueVerified": true,
+  "verifiedType": null,
+  "followers": 126226,
+  "following": 1487,
+  "favouritesCount": 18594,
+  "statusesCount": 9898,
+  "mediaCount": 3725,
+  "createdAt": "2018-02-24T08:31:35.000000Z",
+  "coverPicture": "https://pbs.twimg.com/profile_banners/967316062080348160/1759855383",
+  "profilePicture": "https://pbs.twimg.com/profile_images/1999197150799101953/F7uYoWPu_normal.jpg",
+  "canDm": true,
+  "affiliatesHighlightedLabel": {},
+  "isAutomated": false,
+  "automatedBy": null,
+  "pinnedTweetIds": [
+   "2090734811769970964"
+  ],
+  "profile_interstitial_type": ""
+ }
+}

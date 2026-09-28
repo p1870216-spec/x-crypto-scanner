@@ -1,0 +1,425 @@
+# =============================================================================
+#  Словари и веса X Crypto Following Scanner
+#  Этот файл можно править без изменения кода.
+#  После правки достаточно запустить:  python main.py --rescore
+# =============================================================================
+#
+#  КАК УСТРОЕН ПОИСК
+#  * Термины ищутся ЦЕЛЫМИ СЛОВАМИ, регистр не учитывается
+#    (кроме раздела case_sensitive_terms).
+#  * У английских терминов автоматически допускается окончание -s / -es.
+#  * Фразы из нескольких слов совпадают с любым разделителем:
+#    "on chain" находит "onchain", "on-chain", "on chain".
+#  * Длинные термины поглощают короткие: "crypto trader" даёт +30,
+#    а не 30 + 25 (crypto) + 15 (trader).
+#  * Каждый термин считается ОДИН раз в пределах одного поля.
+#
+#  ФОРМАТ ЗАПИСИ
+#    "термин": 25                       # вес 25, термин основной
+#    "термин": {weight: 15, main: false}
+#
+#  main: true  (по умолчанию) — ОСНОВНОЙ крипто-термин. Его наличие в тексте
+#              делает пост крипто-постом.
+#  main: false — термин даёт баллы, но крипто-постом текст НЕ делает
+#              (finance, trader, stocks — бывают и у аккаунтов про акции).
+# =============================================================================
+
+version: 1
+
+# -----------------------------------------------------------------------------
+# 1. ОСНОВНОЙ СЛОВАРЬ (регистр не учитывается)
+# -----------------------------------------------------------------------------
+terms:
+
+  # --- очень сильные признаки ---
+  "crypto analyst": 30
+  "crypto trader": 30
+  "blockchain analyst": 25
+  "on chain analyst": 25
+  "crypto": 25
+  "cryptocurrency": 25
+  "cryptocurrencies": 25
+  "bitcoin": 25
+
+  # --- сильные признаки ---
+  "crypto twitter": 20
+  "crypto investor": 20
+  "crypto vc": 20
+  "btc": 20
+  "ethereum": 20
+  "eth": 20
+  "defi": 20
+  "web3": 20
+  "blockchain": 20
+  "solana": 20
+  "memecoin": 20
+  "meme coin": 20
+  "hyperliquid": 20
+  "stablecoin": 15
+
+  # --- средние признаки ---
+  "airdrop": 15
+  "on chain": 15
+  "altcoin": 15
+  "dex": 15
+  "nft": 15
+  "perps": 15
+  "binance": 15
+  "bybit": 15
+  "okx": 15
+  "coinbase": 15
+  "dao": 12
+  "satoshi": 12
+  "hodl": 10
+  "degen": 10
+  "wagmi": 10
+  "ngmi": 10
+  "dyor": 8
+  "nfa": 8
+
+  # --- мемкоины и сленг вокруг запусков токенов ---
+  # Добавлено 10.09.2026: без этих фраз посты про мемкоины не считались
+  # крипто-постами — тикер вроде $LAPTOP сервису неизвестен, а других
+  # признаков в тексте нет.
+  "rug pull": 15        # находит и "rugpull", и "rug-pull"
+  "shitcoin": 15
+  "pump fun": 15        # "pump.fun" с точкой ловится как крипто-домен
+  "contract address": 15
+  "mcap": 10            # в акциях так не сокращают
+  "moonbag": 10
+
+  # --- термины, которые сами по себе крипто-постом текст не делают ---
+  "trader": {weight: 15, main: false}
+  "trading": {weight: 15, main: false}
+  "futures": {weight: 12, main: false}
+  "perpetual": {weight: 12, main: false}
+  "token": {weight: 8, main: false}
+  "market analyst": {weight: 5, main: false}
+  "venture capital": {weight: 5, main: false}
+  "finance": {weight: 3, main: false}
+  "investor": {weight: 3, main: false}
+  "investing": {weight: 3, main: false}
+  "stocks": {weight: 3, main: false}
+  "gm": {weight: 3, main: false}
+  "ventures": {weight: 5, main: false}
+  "markets": {weight: 2, main: false}
+  "market": {weight: 2, main: false}
+
+# -----------------------------------------------------------------------------
+# 1a. ИСКЛЮЧЕНИЯ
+#     Эти куски текста вырезаются ДО поиска терминов. Нужны там, где основа
+#     русского слова даёт ложное срабатывание: "криптография" — это не крипта,
+#     но основа "крипт" её поймает. У английских терминов такой беды нет:
+#     поиск идёт целыми словами, и "cryptography" под "crypto" не подходит.
+# -----------------------------------------------------------------------------
+exclusions:
+  - 'криптограф\w*'
+  - 'cryptograph\w*'
+  - 'крипто[- ]?граф\w*'
+
+# -----------------------------------------------------------------------------
+# 2. РЕГИСТРОЗАВИСИМЫЕ КОРОТКИЕ ТЕРМИНЫ
+#    Засчитываются только заглавными буквами или как кэштег ($SOL).
+# -----------------------------------------------------------------------------
+case_sensitive_terms:
+  "CT": 10      # Crypto Twitter; не засчитывается в адресах вида "Hartford, CT"
+  "SOL": 20
+  "OP": 15
+  "ARB": 15
+
+# -----------------------------------------------------------------------------
+# 3. РУССКИЕ ТЕРМИНЫ
+#    По умолчанию ищется ОСНОВА + любое окончание: "крипт" находит
+#    "криптовалютой", "криптой". Если окончания не нужны — stem: false.
+# -----------------------------------------------------------------------------
+ru_terms:
+  "криптоаналитик": 30
+  "криптотрейдер": 30
+  "крипт": 25
+  "биткоин": 25
+  "биткойн": 25
+  "эфириум": 20
+  "блокчейн": 20
+  "мемкоин": 20
+  "мемокоин": 20
+  "дефи": {weight: 20, stem: false}     # без окончаний: иначе совпадёт "дефицит"
+  "альткоин": 15
+  "альты": {weight: 15, stem: false}
+  "альтов": {weight: 15, stem: false}
+  "аирдроп": 15
+  "эйрдроп": 15
+  "ретродроп": 15
+  "ончейн": 15
+  "трейдер": {weight: 15, main: false}
+  "трейдинг": {weight: 15, main: false}
+  "фьючерс": {weight: 12, main: false}
+  "инвестор": {weight: 3, main: false}
+
+# -----------------------------------------------------------------------------
+# 4. КОНТЕКСТНЫЕ СЛОВА
+#    Засчитываются ТОЛЬКО если в том же тексте есть основной крипто-термин,
+#    крипто-кэштег или крипто-домен. Иначе игнорируются полностью
+#    ("прямой эфир", "long weekend", "market support" сами по себе — не крипто).
+#    Группы используются для компонента S и для специализаций.
+# -----------------------------------------------------------------------------
+context_groups:
+
+  trading:
+    weight: 2
+    terms: ["long", "short", "support", "resistance", "entry", "exit",
+            "breakout", "breakdown", "leverage", "liquidation", "tp", "sl",
+            "setup", "chart", "trade", "scalp", "position",
+            "лонг", "шорт", "сетап", "пробой", "плечо", "ликвидация",
+            "тейк", "стоп", "уровень", "уровни", "график"]
+
+  onchain:
+    weight: 2
+    terms: ["wallet", "whale", "whales", "flows", "addresses", "address",
+            "tvl", "holders", "mempool", "bridge",
+            "кошелёк", "кошелек", "кит", "киты", "адреса", "холдеры"]
+
+  defi:
+    weight: 2
+    terms: ["yield", "liquidity", "lending", "staking", "restaking",
+            "vault", "apy", "apr", "pool",
+            "стейкинг", "ликвидность", "доходность", "лендинг", "пул"]
+
+  airdrop:
+    weight: 2
+    terms: ["points", "farming", "testnet", "quests", "waitlist", "snapshot",
+            "фарм", "поинты", "тестнет", "нода", "ноды", "дроп"]
+
+  general:
+    weight: 3
+    terms: ["maxi", "эфир", "монета", "монеты", "тикер", "листинг", "памп", "дамп"]
+
+# -----------------------------------------------------------------------------
+# 5. КЭШТЕГИ ($BTC)
+# -----------------------------------------------------------------------------
+cashtags:
+  known_weight: 15      # за первое совпадение известного тикера в поле
+  unknown_weight: 3     # неизвестный кэштег — может быть акцией ($TSLA)
+  tickers: ["BTC", "ETH", "SOL", "XRP", "DOGE", "SHIB", "AVAX", "ARB", "OP",
+            "BNB", "ADA", "DOT", "LINK", "POL", "MATIC", "TON", "TRX", "LTC",
+            "SUI", "APT", "SEI", "TIA", "INJ", "PEPE", "WIF", "BONK", "HYPE",
+            "JUP", "ENA", "ONDO", "NEAR", "ATOM", "UNI", "AAVE", "LDO", "TAO",
+            "RENDER", "FET", "USDT", "USDC", "STX", "RUNE", "KAS", "FTM",
+            "CRV", "MKR", "SNX", "GMX", "PENDLE", "ETHFI", "EIGEN", "W",
+            "STRK", "ZK", "BLAST", "MOG", "POPCAT", "TRUMP", "VIRTUAL", "AI16Z"]
+
+# -----------------------------------------------------------------------------
+# 6. КРИПТО-ДОМЕНЫ (сайт профиля и ссылки в bio)
+# -----------------------------------------------------------------------------
+domains:
+  "etherscan.io": 15
+  "solscan.io": 15
+  "basescan.org": 15
+  "arbiscan.io": 15
+  "bscscan.com": 15
+  "dexscreener.com": 15
+  "dextools.io": 15
+  "pump.fun": 15
+  "coingecko.com": 15
+  "coinmarketcap.com": 15
+  "debank.com": 15
+  "opensea.io": 15
+  "magiceden.io": 15
+  "blur.io": 15
+  "hyperliquid.xyz": 15
+  "mirror.xyz": 15
+  "paragraph.xyz": 15
+  "binance.com": 15
+  "bybit.com": 15
+  "okx.com": 15
+  "coinbase.com": 15
+  "kraken.com": 15
+  "bitget.com": 15
+  "mexc.com": 15
+  "gate.io": 15
+  "kucoin.com": 15
+  "uniswap.org": 15
+  "jup.ag": 15
+  "farcaster.xyz": 10
+  "warpcast.com": 10
+  "tradingview.com": 5    # бывает и у аккаунтов про акции
+
+# -----------------------------------------------------------------------------
+# 7. ОСОБЫЕ ПРИЗНАКИ
+# -----------------------------------------------------------------------------
+special:
+  # ENS-подобные имена: vitalik.eth, toly.sol
+  ens_weight: 20
+  ens_suffixes: ["eth", "sol", "bnb", "base", "arb"]
+
+  # Символы в name / bio
+  symbols:
+    "₿": 20
+    "🦇🔊": 15
+
+  # Профессиональная категория аккаунта. X отдаёт её в ответе отдельным полем
+  # (professional.category[].name) — в исходном ТЗ этого признака не было,
+  # он найден при разведке реальных ответов. Чтобы отключить — поставьте 0.
+  professional_categories:
+    "Blockchain": 15
+    "Finance": 3
+
+# -----------------------------------------------------------------------------
+# 8. ВЕСА ПОЛЕЙ ПРОФИЛЯ
+#    profile_raw = сумма совпадений по полям с этими множителями.
+# -----------------------------------------------------------------------------
+field_weights:
+  bio: 1.0
+  name: 1.0
+  username: 0.5        # в username поиск по подстроке, термины от 5 символов
+  website: 1.0
+  bio_links: 1.0
+  # Признак внутри @упоминания: "GP @a16zcrypto" — это крипто, но целым
+  # словом "crypto" внутри имени аккаунта не найти. Ищем по подстроке
+  # и берём вполовину слабее. 0 — выключить учёт упоминаний.
+  mention: 0.5
+
+username_substring_min_length: 5
+
+# -----------------------------------------------------------------------------
+# 9. ПАРАМЕТРЫ ИТОГОВОГО БАЛЛА  (crypto_score = P + T + S + F, 0..100)
+# -----------------------------------------------------------------------------
+scoring:
+
+  # P — профиль
+  profile_cap: 40
+  # если постов >= 10, а доля крипто-постов < 0.1 — профиль режется вдвое
+  profile_penalty_min_posts: 10
+  profile_penalty_max_ratio: 0.1
+  profile_penalty_factor: 0.5
+
+  # T — доля крипто-постов
+  tweets_cap: 40
+  tweets_full_ratio: 0.6      # доля 60% и выше даёт максимум
+  tweets_min_posts: 5         # меньше — T умножается на (analyzed / 5)
+
+  # S — специфические сигналы в постах
+  signals_cap: 10
+  signals:
+    trading:  {min_posts: 3, bonus: 5}   # торговые слова или уровни цен
+    onchain:  {min_posts: 3, bonus: 5}
+    airdrop:  {min_posts: 2, bonus: 3}
+
+  # F — подписчики (только при наличии крипто-базы)
+  followers_cap: 10
+  followers_requires_profile_raw: 20
+  followers_requires_ratio: 0.2
+  followers_tiers:            # [минимум подписчиков, баллы]
+    - [1000000, 10]
+    - [500000, 8]
+    - [100000, 6]
+    - [50000, 4]
+    - [10000, 2]
+
+# -----------------------------------------------------------------------------
+# 10. КАТЕГОРИИ
+# -----------------------------------------------------------------------------
+categories:
+  - {min: 80, name: "STRONG CRYPTO CT", emoji: "🚀"}
+  - {min: 60, name: "CRYPTO INFLUENCER", emoji: "🔥"}
+  - {min: 40, name: "CRYPTO RELATED", emoji: "🟢"}
+  - {min: 20, name: "POSSIBLE CRYPTO", emoji: "🟡"}
+  - {min: 0, name: "NOT CRYPTO", emoji: "⚪"}
+
+# -----------------------------------------------------------------------------
+# 11. СПЕЦИАЛИЗАЦИИ (назначаются только при crypto_score >= 20)
+#     profile_terms — признаки в bio / name
+#     post_groups / post_terms — признаки в постах, min_ratio — доля постов
+#     min_pattern_posts — сколько постов должно содержать шаблон (уровни,
+#     адреса контрактов), чтобы специализация сработала без доли
+# -----------------------------------------------------------------------------
+specializations:
+
+  TRADER:
+    profile_terms: ["trader", "trading", "perps", "futures", "perpetual",
+                    "трейдер", "трейдинг"]
+    post_groups: ["trading"]
+    min_ratio: 0.20
+    patterns: ["price_level"]
+    min_pattern_posts: 3
+
+  ANALYST:
+    profile_terms: ["analyst", "research", "researcher", "analysis",
+                    "аналитик", "исследовател"]
+    post_terms: ["analysis", "research", "report", "data", "thread", "🧵",
+                 "анализ", "обзор", "исследование", "отчёт", "отчет"]
+    min_ratio: 0.20
+
+  CRYPTO NEWS:
+    profile_terms: ["news", "media", "breaking", "новости", "медиа"]
+    post_terms: ["🚨", "breaking", "just in", "срочно", "новость"]
+    min_ratio: 0.20
+
+  DEFI:
+    profile_terms: ["defi", "yield", "дефи"]
+    post_groups: ["defi"]
+    post_terms: ["defi", "дефи"]
+    min_ratio: 0.15
+
+  ONCHAIN:
+    profile_terms: ["on chain", "ончейн"]
+    post_groups: ["onchain"]
+    post_terms: ["on chain", "ончейн"]
+    min_ratio: 0.15
+
+  MEMECOIN:
+    profile_terms: ["memecoin", "meme coin", "мемкоин", "pump.fun",
+                    "dexscreener", "degen"]
+    post_terms: ["memecoin", "meme coin", "мемкоин", "pump.fun", "dexscreener",
+                 "ca:", "bonk", "wif", "pepe", "мемы"]
+    patterns: ["contract_address"]
+    min_ratio: 0.10
+    min_pattern_posts: 2
+
+  WEB3:
+    profile_terms: ["web3", "nft", "dao", "builder"]
+    post_terms: ["web3", "nft", "dao", "mint", "minting", "минт"]
+    min_ratio: 0.15
+
+  INVESTOR / VC:
+    profile_terms: ["vc", "crypto vc", "investor", "angel", "partner at",
+                    "capital", "ventures", "venture capital", "инвестор",
+                    "фонд"]
+    min_ratio: 1.01        # только по профилю, посты не учитываются
+
+  AIRDROP:
+    profile_terms: ["airdrop", "аирдроп", "эйрдроп", "ретродроп"]
+    post_groups: ["airdrop"]
+    post_terms: ["airdrop", "аирдроп", "ретродроп"]
+    min_ratio: 0.10
+
+# Если других специализаций нет, либо посты затрагивают >= min_groups разных
+# тематических групп — ставится GENERAL CRYPTO.
+general_crypto:
+  min_groups: 3
+  groups:
+    BTC: ["bitcoin", "btc", "satoshi", "биткоин", "биткойн"]
+    ETH: ["ethereum", "eth", "эфириум"]
+    ALT: ["altcoin", "solana", "sol", "альткоин", "альты"]
+    DEFI: ["defi", "yield", "staking", "lending", "дефи", "стейкинг"]
+    NFT: ["nft", "opensea", "mint", "magiceden"]
+    MEME: ["memecoin", "meme coin", "pump.fun", "мемкоин"]
+    ONCHAIN: ["on chain", "wallet", "whale", "tvl", "ончейн"]
+
+# -----------------------------------------------------------------------------
+# 12. РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ ДЛЯ ШАБЛОНОВ В ПОСТАХ
+# -----------------------------------------------------------------------------
+patterns:
+  # уровни цен: $65k, 65,000, TP1, SL, 0.0123
+  price_level: '(?i)(?:\btp\d?\b|\bsl\b|\$\s?\d[\d.,]*\s?[kmb]?\b|\b\d{1,3}(?:,\d{3})+\b|\b\d+\.\d{3,}\b)'
+  # адреса контрактов: EVM 0x... и base58 Solana.
+  # Используется для специализации MEMECOIN.
+  contract_address: '(?:\b0x[a-fA-F0-9]{40}\b|\b[1-9A-HJ-NP-Za-km-z]{32,44}\b)'
+  # Только EVM-адрес: 0x и ровно 40 шестнадцатеричных символов. Ни на что,
+  # кроме адреса контракта, это не похоже, поэтому такому посту можно верить.
+  evm_address: '\b0x[a-fA-F0-9]{40}\b'
+
+# Шаблоны, наличие которых САМО ПО СЕБЕ делает пост крипто-постом.
+# Сюда добавляются только однозначные признаки: адрес контракта ни с чем
+# не спутать, а вот уровни цен бывают и у постов про акции.
+crypto_patterns:
+  - evm_address
